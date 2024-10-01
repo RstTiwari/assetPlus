@@ -7,6 +7,10 @@ router.get("/", async (req, res) => {
     var posts = await Post.find();
     return res.send(posts);
 });
+router.get("/", async (req, res) => {
+    var posts = await Post.find();
+    return res.send(posts);
+});
 
 // @AssetPlus: Add other routes here
 // router.post("/add")
